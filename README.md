@@ -12,4 +12,3 @@ TODO (dev)
     * Increase nav drawer width
 
 TODO (content)
-* MSDE certified in elementary and special education under instead of Orton-Gillingham trained
