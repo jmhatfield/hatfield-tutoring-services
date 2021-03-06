@@ -1,0 +1,267 @@
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+    --gray: #ececec;
+    --light-gray: #fafafa;
+    --teal: #a0cdc5;
+    --teal-darker: #8eb6af;
+
+    --overlay: rgba(57, 73, 70, 0.8);
+
+    --font-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: var(--roboto);
+    font-size: 14pt;
+    color: var(--font-color);
+    margin: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: var(--montserrat);
+    font-size: 36pt;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    padding: 0.75rem 3rem;
+    background-color: var(--teal);
+    border-radius: 99rem;
+    box-shadow: none;
+    border: none;
+    font-size: 12pt;
+    font-family: var(--montserrat);
+}
+
+.button:hover {
+    background-color: var(--teal-darker);
+    cursor: pointer;
+}
+
+.twoCols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+#content {
+    width: 100%;
+}
+
+#navContainer {
+    background-color: var(--gray);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    font-family: var(--montserrat);
+    font-size: 16pt;
+}
+
+#navButton {
+    display: none;
+}
+
+#navContainer nav {
+    width: 100%;
+}
+
+#navContainer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+#navContainer a {
+    display: inline-block;
+    width: calc(100% - 4rem);
+    padding: 1rem 2rem;
+    text-align: center;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#navContainer a:hover {
+    cursor: pointer;
+}
+
+#navContainer a:hover:not(.active) {
+    background-color: var(--teal);
+}
+
+.active {
+    background-color: var(--teal-darker);
+}
+
+#mainContainer {
+    margin-left: 25%;
+}
+
+main {
+    overflow: auto;
+}
+
+main > * {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+
+main > div {
+    background-image:
+        linear-gradient(var(--overlay), var(--overlay)),
+        url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+main > div p {
+    font-family: var(--montserrat);
+    font-size: 18pt;
+}
+
+main article:nth-child(odd) {
+    background-color: var(--light-gray);
+}
+
+#servicesLink {
+    margin-top: 1rem;
+}
+
+#services button,
+#about button {
+    margin-top: 1.5rem;
+}
+
+#headshotContainer {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+#headshotContainer img {
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 1.5rem
+}
+
+@media screen and (max-width: 750px) {
+    #content {
+        display: block;
+    }
+
+    #navContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        background-color: var(--teal-darker);
+    }
+
+    #navButton {
+        display: block;
+        color: white;
+        font-size: 26pt;
+        user-select: none;
+        padding: 0rem 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #navContainer ul > li:first-child {
+        padding-top: 0.5rem;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .expanded {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        height: 100vh;
+        width: 50% !important;
+        background-color: var(--gray);
+    }
+
+    .expanded a {
+        text-align: left !important;
+    }
+
+    .active {
+        background-color: transparent;
+    }
+
+    #mainContainer {
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+    main > * {
+        justify-content: flex-start;
+        min-height: calc(100vh - 8rem);
+        padding: 2.5rem;
+    }
+
+    #headshotContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #headshotContainer img {
+        margin-right: 0;
+    }
+
+    #headshotContainer p:first-child {
+        margin-top: 1.5rem;
+    }
+
+    #headshotContainer p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        font-size: 12pt;
+    }
+
+    h1, h2 {
+        font-size: 28pt;
+    }
+
+    main > div p {
+        font-size: 14pt;
+    }
+
+    .expanded {
+        width: 60% !important;
+    }
+}
