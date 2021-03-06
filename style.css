@@ -49,6 +49,10 @@ h3 {
     cursor: pointer;
 }
 
+.button:focus {
+    outline: none;
+}
+
 .twoCols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,6 +105,10 @@ h3 {
 
 #navContainer a:hover:not(.active) {
     background-color: var(--teal);
+}
+
+#navContainer a:focus {
+    outline: none;
 }
 
 .active {

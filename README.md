@@ -1,10 +1,7 @@
 # hatfield-tutoring-services
 
 TODO (dev)
-* Remove default button styles
-* Add link to address
 * Review SEO
-* Smooth scrolling doesn't work on Safari
 * For mobile
     * Add animation to nav drawer
     * Decrease font size
