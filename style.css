@@ -212,6 +212,15 @@ iframe {
         padding-top: 0.5rem;
     }
 
+    #navContainer a:hover {
+        cursor: default;
+    }
+
+    #navContainer a:hover,
+    #navContainer .active {
+        background-color: transparent;
+    }
+
     .button {
         width: 100%;
     }
