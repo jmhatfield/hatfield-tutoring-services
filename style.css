@@ -176,6 +176,19 @@ iframe {
     margin-top: 1.5rem
 }
 
+footer {
+    background-color: var(--light-gray);
+}
+
+footer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 750px) {
     #content {
         display: block;
@@ -295,6 +308,4 @@ iframe {
     main > * {
         min-height: calc(100vh - 3.5rem);
     }
-}
-
 }
