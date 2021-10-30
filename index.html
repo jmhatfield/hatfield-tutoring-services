@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="glider/glider.min.css">
     <link rel="stylesheet" href="style.css"/>
 
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="https://kit.fontawesome.com/35699056f7.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -69,6 +72,8 @@
                     </ul>
                     <h3>Specialties</h3>
                     <ul>
+                      <li>Dyslexia</li>
+                      <li>Dysgraphia</li>
                       <li><a href="https://www.ortonacademy.org/resources/what-is-the-orton-gillingham-approach/" target="_blank">Orton-Gillingham</a></li>
                       <li><a href="https://ganderpublishing.com/pages/visualizing-and-verbalizing-overview" target="_blank">Visualizing and Verbalizing&reg;</a></li>
                       <li>Student advocacy</li>
@@ -82,12 +87,37 @@
                     <div>
                         <button class="button contactLink">Contact</button>
                     </div>
+                    <h3>Office</h3>
+                    <div class="glider-contain">
+                      <div class="glider">
+                        <div>
+                            <img src="images/office-4.jpg" alt="inside of the office"/>
+                        </div>
+                        <div>
+                            <img src="images/office-1.jpg" alt="inside of the office"/>
+                        </div>
+                        <div>
+                            <img src="images/office-3.jpg" alt="inside of the office"/>
+                        </div>
+                        <div>
+                            <img src="images/office-2.jpg" alt="inside of the office"/>
+                        </div>
+                      </div>
+
+                      <button aria-label="Previous" class="glider-prev">
+                          <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button aria-label="Next" class="glider-next">
+                          <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div role="tablist" class="dots"></div>
+                    </div>
                 </article>
                 <!-- About -->
                 <article id="about" class="view">
                     <h2>About Marie</h2>
                     <div id="headshotContainer">
-                        <img src="headshot.jpg" alt="Marie Hatfield"/>
+                        <img src="images/headshot.jpg" alt="Marie Hatfield"/>
                         <div id="credentials">
                           <h3>Credentials</h3>
                           <ul>
