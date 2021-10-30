@@ -162,7 +162,6 @@ main article:nth-child(odd) {
     display: flex;
     align-items: center;
     margin: 1.5rem 0;
-    font-weight: bold;
 }
 
 #headshotContainer img {
@@ -264,19 +263,15 @@ footer p {
 
     #headshotContainer {
         flex-direction: column;
-        text-align: center;
     }
 
     #headshotContainer img {
         margin-right: 0;
     }
 
-    #headshotContainer p:first-child {
+    #credentials {
         margin-top: 1.5rem;
-    }
-
-    #headshotContainer p:last-child {
-        margin-bottom: 0;
+        margin-right: auto;
     }
 }
 
