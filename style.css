@@ -134,7 +134,7 @@ main > * {
 main > div {
     background-image:
         linear-gradient(var(--overlay), var(--overlay)),
-        url("background.jpg");
+        url("images/office-4.jpg");
     background-position: center;
     background-size: cover;
     color: white;
@@ -156,6 +156,44 @@ main article:nth-child(odd) {
 #services button,
 #about button {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.glider-slide {
+    display: flex;
+}
+
+.glider-slide img {
+    height: 40rem;
+    object-fit: contain;
+}
+
+.glider-slide.active {
+    background: transparent;
+}
+
+.glider-next, .glider-prev {
+    top: 40%;
+    background-color: var(--teal);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.glider-next:hover, .glider-prev:hover {
+    background-color: var(--teal-darker);
+}
+
+.glider-next, .glider-prev i {
+    font-size: 14pt;
+    color: var(--font-color) !important;
+}
+
+.glider-dot.active {
+    background-color: var(--teal-darker);
 }
 
 #headshotContainer {

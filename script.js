@@ -1,4 +1,3 @@
-
 let isMobile = false;
 
 const routes = {
