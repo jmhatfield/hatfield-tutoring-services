@@ -134,7 +134,7 @@ main > * {
 main > div {
     background-image:
         linear-gradient(var(--overlay), var(--overlay)),
-        url("background.jpg");
+        url("images/office-4.jpg");
     background-position: center;
     background-size: cover;
     color: white;
