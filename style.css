@@ -1,344 +1,348 @@
 :root {
-    --montserrat: 'Montserrat', sans-serif;
-    --roboto: 'Roboto', sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --roboto: "Roboto", sans-serif;
 
-    --gray: #ececec;
-    --light-gray: #fafafa;
-    --teal: #a0cdc5;
-    --teal-darker: #8eb6af;
+  --gray: #ececec;
+  --light-gray: #fafafa;
+  --teal: #a0cdc5;
+  --teal-darker: #8eb6af;
 
-    --overlay: rgba(57, 73, 70, 0.8);
+  --overlay: rgba(57, 73, 70, 0.8);
 
-    --font-color: rgba(0, 0, 0, 0.8);
+  --font-color: rgba(0, 0, 0, 0.8);
 }
 
 body {
-    font-family: var(--roboto);
-    font-size: 14pt;
-    color: var(--font-color);
-    margin: 0;
+  font-family: var(--roboto);
+  font-size: 14pt;
+  color: var(--font-color);
+  margin: 0;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
-h1, h2 {
-    font-family: var(--montserrat);
-    font-size: 36pt;
-    margin: 0 0 1rem 0;
-    padding: 0;
+h1,
+h2 {
+  font-family: var(--montserrat);
+  font-size: 36pt;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 h3 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .button {
-    padding: 0.75rem 3rem;
-    background-color: var(--teal);
-    border-radius: 99rem;
-    box-shadow: none;
-    border: none;
-    font-size: 12pt;
-    font-family: var(--montserrat);
+  padding: 0.75rem 3rem;
+  background-color: var(--teal);
+  border-radius: 99rem;
+  box-shadow: none;
+  border: none;
+  font-size: 12pt;
+  font-family: var(--montserrat);
 }
 
 .button:hover {
-    background-color: var(--teal-darker);
-    cursor: pointer;
+  background-color: var(--teal-darker);
+  cursor: pointer;
 }
 
 .button:focus {
-    outline: none;
+  outline: none;
 }
 
 .twoCols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 #content {
-    width: 100%;
+  width: 100%;
 }
 
 #navContainer {
-    background-color: var(--gray);
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 25%;
-    display: flex;
-    align-items: center;
-    font-family: var(--montserrat);
-    font-size: 16pt;
+  background-color: var(--gray);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  font-family: var(--montserrat);
+  font-size: 16pt;
 }
 
 #navButton {
-    display: none;
+  display: none;
 }
 
 #navContainer nav {
-    width: 100%;
+  width: 100%;
 }
 
 #navContainer ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  width: 100%;
 }
 
 #navContainer a {
-    display: inline-block;
-    width: calc(100% - 4rem);
-    padding: 1rem 2rem;
-    text-align: center;
-    color: var(--font-color);
-    text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 4rem);
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--font-color);
+  text-decoration: none;
 }
 
 #navContainer a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #navContainer a:hover:not(.active) {
-    background-color: var(--teal);
+  background-color: var(--teal);
 }
 
 #navContainer a:focus {
-    outline: none;
+  outline: none;
 }
 
 .active {
-    background-color: var(--teal-darker);
+  background-color: var(--teal-darker);
 }
 
 #mainContainer {
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
 main {
-    overflow: auto;
+  overflow: auto;
 }
 
 main > * {
-    min-height: calc(100vh - 4rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 5rem;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 5rem;
 }
 
 main > div {
-    background-image:
-        linear-gradient(var(--overlay), var(--overlay)),
-        url("images/office-4.jpg");
-    background-position: center;
-    background-size: cover;
-    color: white;
+  background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("images/office-4.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 
 main > div p {
-    font-family: var(--montserrat);
-    font-size: 18pt;
+  font-family: var(--montserrat);
+  font-size: 18pt;
 }
 
 main article:nth-child(odd) {
-    background-color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 
 #servicesLink {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #services button,
 #about button {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .glider-slide {
-    display: flex;
+  display: flex;
 }
 
 .glider-slide img {
-    height: 40rem;
-    object-fit: contain;
+  height: 40rem;
+  object-fit: contain;
 }
 
 .glider-slide.active {
-    background: transparent;
+  background: transparent;
 }
 
-.glider-next, .glider-prev {
-    top: 40%;
-    background-color: var(--teal);
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.glider-next,
+.glider-prev {
+  top: 40%;
+  background-color: var(--teal);
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
-.glider-next:hover, .glider-prev:hover {
-    background-color: var(--teal-darker);
+.glider-next:hover,
+.glider-prev:hover {
+  background-color: var(--teal-darker);
 }
 
-.glider-next, .glider-prev i {
-    font-size: 14pt;
-    color: var(--font-color) !important;
+.glider-next,
+.glider-prev i {
+  font-size: 14pt;
+  color: var(--font-color) !important;
 }
 
 .glider-dot.active {
-    background-color: var(--teal-darker);
+  background-color: var(--teal-darker);
 }
 
 #headshotContainer {
-    display: flex;
-    align-items: center;
-    margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
 }
 
 #headshotContainer img {
-    height: 10rem;
-    border-radius: 50%;
-    margin-right: 2rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
 }
 
 iframe {
-    width: 100%;
-    margin-top: 1.5rem
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
 footer {
-    background-color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 
 footer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 10pt;
-    color: rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 750px) {
-    #content {
-        display: block;
-    }
+  #content {
+    display: block;
+  }
 
-    #navContainer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 4rem;
-        background-color: var(--teal-darker);
-    }
+  #navContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--teal-darker);
+  }
 
-    #navButton {
-        display: block;
-        color: white;
-        font-size: 26pt;
-        user-select: none;
-        padding: 0rem 1rem;
-    }
+  #navButton {
+    display: block;
+    color: white;
+    font-size: 26pt;
+    user-select: none;
+    padding: 0rem 1rem;
+  }
 
-    nav {
-        display: block;
-        position: absolute;
-        left: -60%;
-        top: 4rem;
-        height: 100vh;
-        width: 60% !important;
-        background-color: var(--gray);
-        transition: left 0.1s ease-out;
-    }
+  nav {
+    display: block;
+    position: absolute;
+    left: -60%;
+    top: 4rem;
+    height: 100vh;
+    width: 60% !important;
+    background-color: var(--gray);
+    transition: left 0.1s ease-out;
+  }
 
-    #navContainer ul > li:first-child {
-        padding-top: 0.5rem;
-    }
+  #navContainer ul > li:first-child {
+    padding-top: 0.5rem;
+  }
 
-    #navContainer a:hover {
-        cursor: default;
-    }
+  #navContainer a:hover {
+    cursor: default;
+  }
 
-    #navContainer a:hover,
-    #navContainer .active {
-        background-color: transparent;
-    }
+  #navContainer a:hover,
+  #navContainer .active {
+    background-color: transparent;
+  }
 
-    .button {
-        width: 100%;
-    }
+  .button {
+    width: 100%;
+  }
 
-    .expanded {
-        left: 0;
-        transition: left 0.2s ease-in;
-    }
+  .expanded {
+    left: 0;
+    transition: left 0.2s ease-in;
+  }
 
-    .expanded a {
-        text-align: left !important;
-    }
+  .expanded a {
+    text-align: left !important;
+  }
 
-    .active {
-        background-color: transparent;
-    }
+  .active {
+    background-color: transparent;
+  }
 
-    #mainContainer {
-        margin-left: 0;
-        margin-top: 4rem;
-    }
+  #mainContainer {
+    margin-left: 0;
+    margin-top: 4rem;
+  }
 
-    main > * {
-        justify-content: flex-start;
-        min-height: calc(100vh - 8rem);
-        padding: 2.5rem;
-    }
+  main > * {
+    justify-content: flex-start;
+    min-height: calc(100vh - 8rem);
+    padding: 2.5rem;
+  }
 
-    #headshotContainer {
-        flex-direction: column;
-    }
+  #headshotContainer {
+    flex-direction: column;
+  }
 
-    #headshotContainer img {
-        margin-right: 0;
-    }
+  #headshotContainer img {
+    margin-right: 0;
+  }
 
-    #credentials {
-        margin-top: 1.5rem;
-        margin-right: auto;
-    }
+  #credentials {
+    margin-top: 1.5rem;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    body {
-        font-size: 12pt;
-    }
+  body {
+    font-size: 12pt;
+  }
 
-    h1, h2 {
-        font-size: 28pt;
-    }
+  h1,
+  h2 {
+    font-size: 28pt;
+  }
 
-    main > div p {
-        font-size: 14pt;
-    }
+  main > div p {
+    font-size: 14pt;
+  }
 
-    #navContainer {
-        height: 3.5rem;
-    }
+  #navContainer {
+    height: 3.5rem;
+  }
 
-    nav {
-        top: 3.5rem;
-    }
+  nav {
+    top: 3.5rem;
+  }
 
-    #mainContainer {
-        margin-top: 3.5rem;
-    }
+  #mainContainer {
+    margin-top: 3.5rem;
+  }
 
-    main > * {
-        min-height: calc(100vh - 3.5rem);
-    }
+  main > * {
+    min-height: calc(100vh - 3.5rem);
+  }
 }
